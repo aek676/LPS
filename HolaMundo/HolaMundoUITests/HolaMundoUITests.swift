@@ -1,13 +1,13 @@
 //
-//  sesion02UITests.swift
-//  sesion02UITests
+//  HolaMundoUITests.swift
+//  HolaMundoUITests
 //
 //  Created by Aula03 on 24/9/24.
 //
 
 import XCTest
 
-final class sesion02UITests: XCTestCase {
+final class HolaMundoUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

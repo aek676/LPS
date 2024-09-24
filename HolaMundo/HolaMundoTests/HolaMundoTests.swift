@@ -1,14 +1,14 @@
 //
-//  sesion02Tests.swift
-//  sesion02Tests
+//  HolaMundoTests.swift
+//  HolaMundoTests
 //
 //  Created by Aula03 on 24/9/24.
 //
 
 import Testing
-@testable import sesion02
+@testable import HolaMundo
 
-struct sesion02Tests {
+struct HolaMundoTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

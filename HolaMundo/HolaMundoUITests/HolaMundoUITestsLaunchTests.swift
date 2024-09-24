@@ -1,13 +1,13 @@
 //
-//  sesion02UITestsLaunchTests.swift
-//  sesion02UITests
+//  HolaMundoUITestsLaunchTests.swift
+//  HolaMundoUITests
 //
 //  Created by Aula03 on 24/9/24.
 //
 
 import XCTest
 
-final class sesion02UITestsLaunchTests: XCTestCase {
+final class HolaMundoUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

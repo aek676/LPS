@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		353D84152CA30CB600199233 /* PBXContainerItemProxy */ = {
+		353D84B92CA3115C00199233 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 353D83FB2CA30CB400199233 /* Project object */;
+			containerPortal = 353D84A02CA3115900199233 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 353D84022CA30CB400199233;
-			remoteInfo = sesion02;
+			remoteGlobalIDString = 353D84A72CA3115900199233;
+			remoteInfo = HolaMundo;
 		};
-		353D841F2CA30CB600199233 /* PBXContainerItemProxy */ = {
+		353D84C32CA3115C00199233 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 353D83FB2CA30CB400199233 /* Project object */;
+			containerPortal = 353D84A02CA3115900199233 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 353D84022CA30CB400199233;
-			remoteInfo = sesion02;
+			remoteGlobalIDString = 353D84A72CA3115900199233;
+			remoteInfo = HolaMundo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		353D84032CA30CB400199233 /* sesion02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sesion02.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		353D84142CA30CB600199233 /* sesion02Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sesion02Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		353D841E2CA30CB600199233 /* sesion02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sesion02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		353D84A82CA3115900199233 /* HolaMundo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolaMundo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		353D84B82CA3115C00199233 /* HolaMundoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaMundoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		353D84C22CA3115C00199233 /* HolaMundoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaMundoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		353D84052CA30CB400199233 /* sesion02 */ = {
+		353D84AA2CA3115900199233 /* HolaMundo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = sesion02;
+			path = HolaMundo;
 			sourceTree = "<group>";
 		};
-		353D84172CA30CB600199233 /* sesion02Tests */ = {
+		353D84BB2CA3115C00199233 /* HolaMundoTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = sesion02Tests;
+			path = HolaMundoTests;
 			sourceTree = "<group>";
 		};
-		353D84212CA30CB600199233 /* sesion02UITests */ = {
+		353D84C52CA3115C00199233 /* HolaMundoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = sesion02UITests;
+			path = HolaMundoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		353D84002CA30CB400199233 /* Frameworks */ = {
+		353D84A52CA3115900199233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D84112CA30CB600199233 /* Frameworks */ = {
+		353D84B52CA3115C00199233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D841B2CA30CB600199233 /* Frameworks */ = {
+		353D84BF2CA3115C00199233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		353D83FA2CA30CB400199233 = {
+		353D849F2CA3115900199233 = {
 			isa = PBXGroup;
 			children = (
-				353D84052CA30CB400199233 /* sesion02 */,
-				353D84172CA30CB600199233 /* sesion02Tests */,
-				353D84212CA30CB600199233 /* sesion02UITests */,
-				353D84042CA30CB400199233 /* Products */,
+				353D84AA2CA3115900199233 /* HolaMundo */,
+				353D84BB2CA3115C00199233 /* HolaMundoTests */,
+				353D84C52CA3115C00199233 /* HolaMundoUITests */,
+				353D84A92CA3115900199233 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		353D84042CA30CB400199233 /* Products */ = {
+		353D84A92CA3115900199233 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				353D84032CA30CB400199233 /* sesion02.app */,
-				353D84142CA30CB600199233 /* sesion02Tests.xctest */,
-				353D841E2CA30CB600199233 /* sesion02UITests.xctest */,
+				353D84A82CA3115900199233 /* HolaMundo.app */,
+				353D84B82CA3115C00199233 /* HolaMundoTests.xctest */,
+				353D84C22CA3115C00199233 /* HolaMundoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		353D84022CA30CB400199233 /* sesion02 */ = {
+		353D84A72CA3115900199233 /* HolaMundo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 353D84282CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02" */;
+			buildConfigurationList = 353D84CC2CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundo" */;
 			buildPhases = (
-				353D83FF2CA30CB400199233 /* Sources */,
-				353D84002CA30CB400199233 /* Frameworks */,
-				353D84012CA30CB400199233 /* Resources */,
+				353D84A42CA3115900199233 /* Sources */,
+				353D84A52CA3115900199233 /* Frameworks */,
+				353D84A62CA3115900199233 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				353D84052CA30CB400199233 /* sesion02 */,
+				353D84AA2CA3115900199233 /* HolaMundo */,
 			);
-			name = sesion02;
+			name = HolaMundo;
 			packageProductDependencies = (
 			);
-			productName = sesion02;
-			productReference = 353D84032CA30CB400199233 /* sesion02.app */;
+			productName = HolaMundo;
+			productReference = 353D84A82CA3115900199233 /* HolaMundo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		353D84132CA30CB600199233 /* sesion02Tests */ = {
+		353D84B72CA3115C00199233 /* HolaMundoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 353D842B2CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02Tests" */;
+			buildConfigurationList = 353D84CF2CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundoTests" */;
 			buildPhases = (
-				353D84102CA30CB600199233 /* Sources */,
-				353D84112CA30CB600199233 /* Frameworks */,
-				353D84122CA30CB600199233 /* Resources */,
+				353D84B42CA3115C00199233 /* Sources */,
+				353D84B52CA3115C00199233 /* Frameworks */,
+				353D84B62CA3115C00199233 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				353D84162CA30CB600199233 /* PBXTargetDependency */,
+				353D84BA2CA3115C00199233 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				353D84172CA30CB600199233 /* sesion02Tests */,
+				353D84BB2CA3115C00199233 /* HolaMundoTests */,
 			);
-			name = sesion02Tests;
+			name = HolaMundoTests;
 			packageProductDependencies = (
 			);
-			productName = sesion02Tests;
-			productReference = 353D84142CA30CB600199233 /* sesion02Tests.xctest */;
+			productName = HolaMundoTests;
+			productReference = 353D84B82CA3115C00199233 /* HolaMundoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		353D841D2CA30CB600199233 /* sesion02UITests */ = {
+		353D84C12CA3115C00199233 /* HolaMundoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 353D842E2CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02UITests" */;
+			buildConfigurationList = 353D84D22CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundoUITests" */;
 			buildPhases = (
-				353D841A2CA30CB600199233 /* Sources */,
-				353D841B2CA30CB600199233 /* Frameworks */,
-				353D841C2CA30CB600199233 /* Resources */,
+				353D84BE2CA3115C00199233 /* Sources */,
+				353D84BF2CA3115C00199233 /* Frameworks */,
+				353D84C02CA3115C00199233 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				353D84202CA30CB600199233 /* PBXTargetDependency */,
+				353D84C42CA3115C00199233 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				353D84212CA30CB600199233 /* sesion02UITests */,
+				353D84C52CA3115C00199233 /* HolaMundoUITests */,
 			);
-			name = sesion02UITests;
+			name = HolaMundoUITests;
 			packageProductDependencies = (
 			);
-			productName = sesion02UITests;
-			productReference = 353D841E2CA30CB600199233 /* sesion02UITests.xctest */;
+			productName = HolaMundoUITests;
+			productReference = 353D84C22CA3115C00199233 /* HolaMundoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		353D83FB2CA30CB400199233 /* Project object */ = {
+		353D84A02CA3115900199233 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					353D84022CA30CB400199233 = {
+					353D84A72CA3115900199233 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					353D84132CA30CB600199233 = {
+					353D84B72CA3115C00199233 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 353D84022CA30CB400199233;
+						TestTargetID = 353D84A72CA3115900199233;
 					};
-					353D841D2CA30CB600199233 = {
+					353D84C12CA3115C00199233 = {
 						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 353D84022CA30CB400199233;
+						TestTargetID = 353D84A72CA3115900199233;
 					};
 				};
 			};
-			buildConfigurationList = 353D83FE2CA30CB400199233 /* Build configuration list for PBXProject "sesion02" */;
+			buildConfigurationList = 353D84A32CA3115900199233 /* Build configuration list for PBXProject "HolaMundo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 353D83FA2CA30CB400199233;
+			mainGroup = 353D849F2CA3115900199233;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 353D84042CA30CB400199233 /* Products */;
+			productRefGroup = 353D84A92CA3115900199233 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				353D84022CA30CB400199233 /* sesion02 */,
-				353D84132CA30CB600199233 /* sesion02Tests */,
-				353D841D2CA30CB600199233 /* sesion02UITests */,
+				353D84A72CA3115900199233 /* HolaMundo */,
+				353D84B72CA3115C00199233 /* HolaMundoTests */,
+				353D84C12CA3115C00199233 /* HolaMundoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		353D84012CA30CB400199233 /* Resources */ = {
+		353D84A62CA3115900199233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D84122CA30CB600199233 /* Resources */ = {
+		353D84B62CA3115C00199233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D841C2CA30CB600199233 /* Resources */ = {
+		353D84C02CA3115C00199233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		353D83FF2CA30CB400199233 /* Sources */ = {
+		353D84A42CA3115900199233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D84102CA30CB600199233 /* Sources */ = {
+		353D84B42CA3115C00199233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		353D841A2CA30CB600199233 /* Sources */ = {
+		353D84BE2CA3115C00199233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		353D84162CA30CB600199233 /* PBXTargetDependency */ = {
+		353D84BA2CA3115C00199233 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 353D84022CA30CB400199233 /* sesion02 */;
-			targetProxy = 353D84152CA30CB600199233 /* PBXContainerItemProxy */;
+			target = 353D84A72CA3115900199233 /* HolaMundo */;
+			targetProxy = 353D84B92CA3115C00199233 /* PBXContainerItemProxy */;
 		};
-		353D84202CA30CB600199233 /* PBXTargetDependency */ = {
+		353D84C42CA3115C00199233 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 353D84022CA30CB400199233 /* sesion02 */;
-			targetProxy = 353D841F2CA30CB600199233 /* PBXContainerItemProxy */;
+			target = 353D84A72CA3115900199233 /* HolaMundo */;
+			targetProxy = 353D84C32CA3115C00199233 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		353D84262CA30CB600199233 /* Debug */ = {
+		353D84CA2CA3115C00199233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,18 +321,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		353D84272CA30CB600199233 /* Release */ = {
+		353D84CB2CA3115C00199233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,169 +378,180 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		353D84292CA30CB600199233 /* Debug */ = {
+		353D84CD2CA3115C00199233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = sesion02/sesion02.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sesion02/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HolaMundo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		353D842A2CA30CB600199233 /* Release */ = {
+		353D84CE2CA3115C00199233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = sesion02/sesion02.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sesion02/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HolaMundo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		353D842C2CA30CB600199233 /* Debug */ = {
+		353D84D02CA3115C00199233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sesion02.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sesion02";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolaMundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HolaMundo";
 			};
 			name = Debug;
 		};
-		353D842D2CA30CB600199233 /* Release */ = {
+		353D84D12CA3115C00199233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sesion02.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sesion02";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolaMundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HolaMundo";
 			};
 			name = Release;
 		};
-		353D842F2CA30CB600199233 /* Debug */ = {
+		353D84D32CA3115C00199233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = sesion02;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolaMundo;
 			};
 			name = Debug;
 		};
-		353D84302CA30CB600199233 /* Release */ = {
+		353D84D42CA3115C00199233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.sesion02UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ual.HolaMundoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = sesion02;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolaMundo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		353D83FE2CA30CB400199233 /* Build configuration list for PBXProject "sesion02" */ = {
+		353D84A32CA3115900199233 /* Build configuration list for PBXProject "HolaMundo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				353D84262CA30CB600199233 /* Debug */,
-				353D84272CA30CB600199233 /* Release */,
+				353D84CA2CA3115C00199233 /* Debug */,
+				353D84CB2CA3115C00199233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		353D84282CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02" */ = {
+		353D84CC2CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				353D84292CA30CB600199233 /* Debug */,
-				353D842A2CA30CB600199233 /* Release */,
+				353D84CD2CA3115C00199233 /* Debug */,
+				353D84CE2CA3115C00199233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		353D842B2CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02Tests" */ = {
+		353D84CF2CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				353D842C2CA30CB600199233 /* Debug */,
-				353D842D2CA30CB600199233 /* Release */,
+				353D84D02CA3115C00199233 /* Debug */,
+				353D84D12CA3115C00199233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		353D842E2CA30CB600199233 /* Build configuration list for PBXNativeTarget "sesion02UITests" */ = {
+		353D84D22CA3115C00199233 /* Build configuration list for PBXNativeTarget "HolaMundoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				353D842F2CA30CB600199233 /* Debug */,
-				353D84302CA30CB600199233 /* Release */,
+				353D84D32CA3115C00199233 /* Debug */,
+				353D84D42CA3115C00199233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 353D83FB2CA30CB400199233 /* Project object */;
+	rootObject = 353D84A02CA3115900199233 /* Project object */;
 }

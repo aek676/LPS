@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Logotipo UAL.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
