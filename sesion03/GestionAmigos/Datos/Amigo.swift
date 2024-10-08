@@ -15,4 +15,3 @@ struct Amigo: Identifiable {
     var longitud: Double = 0.0
     var favorito: Bool = false  //este atributo es nuevo...
 }
-

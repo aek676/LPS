@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		35F47A382CB5769D0098D18D /* Amigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F47A372CB5769D0098D18D /* Amigo.swift */; };
+		35F47A402CB5775E0098D18D /* ModeloDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F47A3F2CB5775E0098D18D /* ModeloDatos.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3550C3172CAC66E7008E9727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,8 @@
 		3550C3062CAC66E5008E9727 /* GestionAmigos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestionAmigos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3550C3162CAC66E7008E9727 /* GestionAmigosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestionAmigosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3550C3202CAC66E7008E9727 /* GestionAmigosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GestionAmigosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F47A372CB5769D0098D18D /* Amigo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amigo.swift; sourceTree = "<group>"; };
+		35F47A3F2CB5775E0098D18D /* ModeloDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloDatos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +82,7 @@
 		3550C2FD2CAC66E5008E9727 = {
 			isa = PBXGroup;
 			children = (
+				35F47A412CB577700098D18D /* Datos */,
 				3550C3082CAC66E5008E9727 /* GestionAmigos */,
 				3550C3192CAC66E7008E9727 /* GestionAmigosTests */,
 				3550C3232CAC66E7008E9727 /* GestionAmigosUITests */,
@@ -90,6 +98,15 @@
 				3550C3202CAC66E7008E9727 /* GestionAmigosUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		35F47A412CB577700098D18D /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				35F47A372CB5769D0098D18D /* Amigo.swift */,
+				35F47A3F2CB5775E0098D18D /* ModeloDatos.swift */,
+			);
+			path = Datos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F47A402CB5775E0098D18D /* ModeloDatos.swift in Sources */,
+				35F47A382CB5769D0098D18D /* Amigo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

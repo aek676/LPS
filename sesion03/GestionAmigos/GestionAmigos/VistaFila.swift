@@ -1,14 +1,7 @@
-//
-//  VistaFila.swift
-//  GestionAmigos
-//
-//  Created by Aula03 on 1/10/24.
-//
-
 import SwiftUI
 
 struct VistaFila: View {
-    @State var amigosCurrent:
+    @State var amigoCurrent: Amigo
     var body: some View {
         HStack {
             amigoCurrent.imagen
@@ -35,8 +28,10 @@ struct VistaFila: View {
 
 struct VistaFila_Previews: PreviewProvider {
     static var previews: some View {
-        List(ModeloDatos().arrAmigos) {
-            VistaFila(amigoCurrent: $0)
+        List {
+            ForEach(ModeloDatos().arrAmigos) {
+                VistaFila(amigoCurrent: $0)
+            }
         }
     }
 }
