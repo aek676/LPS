@@ -2,6 +2,7 @@ import SwiftUI
 
 struct VistaDatos: View {
     @EnvironmentObject var amigoVM: AmigoViewModel
+    @State private var amigoIndex: Int = -1
     @State var amigoCurrent: Amigo
     @State private var textoOpinion: String = ""
     var index: Int {
@@ -60,6 +61,17 @@ struct VistaDatos: View {
             .frame(width: 300)
             Spacer()
         }.background(Color.green)
+            .onAppear{
+                //Inicializo las variables de estado
+                textoOpinion = amigoCurrent.about
+                favorito = amigo.favorito //He creado la variable de estado favorito
+                amigoIndex = amigoVM.datos.firstIndex(where: {$0.id == amigo.id})!
+            }
+            .onDisappear{
+                //Actualizo la estructura de datos principal para registrar los cambios
+                amigoVM.datos[amigoIndex].about = textoOpinion
+                amigoVM.datos[amigoIndex].favorito = favorito
+            }
     }
 
 }
