@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct VistaFila: View {
+    @EnvironmentObject private var modeloDatos: ModeloDatos
     @State var amigoCurrent: Amigo
+    var index: Int {
+        modeloDatos.arrAmigos.firstIndex(where: { $0.id == amigoCurrent.id })!
+    }
     var body: some View {
         HStack {
             amigoCurrent.imagen
@@ -27,8 +31,12 @@ struct VistaFila: View {
                     .fontWeight(.medium)
             }
             Spacer()
-            Image(systemName: amigoCurrent.favorito ? "star.fill" : "star")
-                .foregroundColor(amigoCurrent.favorito ? .yellow : .gray)
+            Image(
+                systemName: modeloDatos.arrAmigos[index].favorito
+                    ? "star.fill" : "star"
+            )
+            .foregroundColor(
+                modeloDatos.arrAmigos[index].favorito ? .yellow : .gray)
         }
 
     }
@@ -36,6 +44,6 @@ struct VistaFila: View {
 
 #Preview {
     List(ModeloDatos().arrAmigos) {
-        VistaFila(amigoCurrent: $0)
+        VistaFila(amigoCurrent: $0).environmentObject(ModeloDatos())
     }
 }

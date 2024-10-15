@@ -1,25 +1,27 @@
 import Foundation
 
-final class ModeloDatos {
-    var arrAmigos: [Amigo] = [
+final class ModeloDatos: ObservableObject {
+    @Published var arrAmigos: [Amigo] = [
         Amigo(
-            nombre: "Mat Fraser", telefono: "3084545452",
-            email: "matfraser@gmailing.com",
-            about: "Mat Fraser is the best athlete of the world",
-            imagenID: "MatFraser",
-            latitud: 36.83041530329687, longitud: -2.4059776820622836,
+            nombre: "Alice Johnson", telefono: "1234567890",
+            email: "alice.johnson@example.com",
+            about: "Alice is a talented artist and loves painting.",
+            imagenID: "AliceJohnson",
+            latitud: 40.712776, longitud: -74.005974,
             favorito: true),
         Amigo(
-            nombre: "RaiNao", telefono: "749523423",
-            email: "rainao@gmailing.com",
-            about: "RaiNao…", imagenID: "Rainao",
-            latitud: 36.8389157611977, longitud: -2.40714076462062,
+            nombre: "Bob Smith", telefono: "0987654321",
+            email: "bob.smith@example.com",
+            about: "Bob is a software engineer and tech enthusiast.",
+            imagenID: "BobSmith",
+            latitud: 34.052235, longitud: -118.243683,
             favorito: false),
         Amigo(
-            nombre: "Tim Robbins", telefono: "743523223",
-            email: "timrobbins@gmailing.com",
-            about: "Tim is an ordinary actor", imagenID: "TimRobbins",
-            latitud: 36.85764033530464,
-            longitud: -2.452192838957072, favorito: true),
+            nombre: "Charlie Brown", telefono: "5551234567",
+            email: "charlie.brown@example.com",
+            about: "Charlie is a writer and loves storytelling.",
+            imagenID: "CharlieBrown",
+            latitud: 51.507351, longitud: -0.127758,
+            favorito: true),
     ]
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct VistaListaAmigos: View {
+    @EnvironmentObject var modeloDatos: ModeloDatos
     @State var soloFavoritos = false
     var body: some View {
         NavigationView {
@@ -15,9 +16,11 @@ struct VistaListaAmigos: View {
                 Toggle(isOn: $soloFavoritos) {
                     Text("Mostrar solo los favoritos")
                 }
-                ForEach(ModeloDatos().arrAmigos) { amigo in
+                ForEach(modeloDatos.arrAmigos) { amigo in
                     if !soloFavoritos || amigo.favorito {
-                        NavigationLink(destination: VistaDetalle(amigoCurrent: amigo)) {
+                        NavigationLink(
+                            destination: VistaDetalle(amigoCurrent: amigo).environmentObject(modeloDatos)
+                        ) {
                             VistaFila(amigoCurrent: amigo)
                         }
                     }
@@ -30,4 +33,5 @@ struct VistaListaAmigos: View {
 
 #Preview {
     VistaListaAmigos()
+        .environmentObject(ModeloDatos())
 }

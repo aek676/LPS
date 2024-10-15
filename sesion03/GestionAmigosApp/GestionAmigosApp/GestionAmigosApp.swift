@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct GestionAmigosAppApp: App {
+struct GestionAmigosApp: App {
+    @StateObject private var modeloDatos = ModeloDatos()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VistaListaAmigos()
+                .environmentObject(modeloDatos)
         }
     }
 }

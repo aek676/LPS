@@ -1,22 +1,28 @@
 import SwiftUI
 
 struct VistaDetalle: View {
+    @EnvironmentObject private var modeloDatos: ModeloDatos
     @State var amigoCurrent: Amigo
     var body: some View {
-        VStack {
-            VistaMapa(latitud: amigoCurrent.latitud, longitud: amigoCurrent.longitud).frame(height: 250)
-            VistaImagen(imagenID: amigoCurrent.imagenID).offset(y: -110).padding(.bottom, -110)
-            VistaDatos(amigoCurrent: amigoCurrent)
-        }
+        ScrollView {
+            VistaMapa(
+                latitud: amigoCurrent.latitud, longitud: amigoCurrent.longitud
+            ).frame(height: 250)
+            VistaImagen(imagenID: amigoCurrent.imagenID).offset(y: -110)
+                .padding(.bottom, -110)
+            VistaDatos(amigoCurrent: amigoCurrent).environmentObject(modeloDatos)
+        }.navigationTitle(amigoCurrent.nombre)
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    VistaDetalle(amigoCurrent: Amigo(
-        nombre: "Mat Fraser", telefono: "3084545452",
-        email: "matfraser@gmailing.com",
-        about: "Mat Fraser is the best athlete of the world",
-        imagenID: "MatFraser",
-        latitud: 36.83041530329687, longitud: -2.4059776820622836,
-        favorito: true))
+    VistaDetalle(
+        amigoCurrent: Amigo(
+            nombre: "Alice Johnson", telefono: "1234567890",
+            email: "alice.johnson@example.com",
+            about: "Alice is a talented artist and loves painting.",
+            imagenID: "AliceJohnson",
+            latitud: 40.712776, longitud: -74.005974,
+            favorito: true)).environmentObject(ModeloDatos())
 }
