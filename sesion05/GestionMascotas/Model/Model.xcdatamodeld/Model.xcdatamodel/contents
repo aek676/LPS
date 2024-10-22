@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24A348" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="MascotaEntity" representedClassName="MascotaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute" optional="YES"/>
+        <attribute name="attribute1" optional="YES"/>
+        <attribute name="attribute2" optional="YES"/>
+        <attribute name="attribute3" optional="YES"/>
+        <attribute name="attribute4" optional="YES"/>
+        <attribute name="attribute5" optional="YES"/>
+        <attribute name="attribute6" optional="YES"/>
+        <attribute name="attribute7" optional="YES"/>
+        <attribute name="attribute8" optional="YES"/>
+        <attribute name="attribute9" optional="YES"/>
+        <attribute name="attribute10" optional="YES"/>
+        <attribute name="attribute11" optional="YES"/>
+        <attribute name="attribute12" optional="YES"/>
+    </entity>
+    <entity name="PersonaEntity" representedClassName="PersonaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="edad" optional="YES" attributeType="Binary"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+    </entity>
+</model>
