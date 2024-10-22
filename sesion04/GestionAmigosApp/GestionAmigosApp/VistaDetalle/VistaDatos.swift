@@ -1,89 +1,64 @@
 import SwiftUI
 
 struct VistaDatos: View {
-    @EnvironmentObject var amigoVM: AmigoViewModel
-    @State private var amigoIndex: Int = -1
-    @State var amigoCurrent: Amigo
+    @EnvironmentObject private var amigoVM: AmigoViewModel
     @State private var textoOpinion: String = ""
-    var index: Int {
-        amigoVM.arrAmigos.firstIndex(where: { $0.id == amigoCurrent.id })!
-    }
+    @State private var favorito = false
+    @State private var amigoIndex: Int = -1
+    var amigoCurrent: Amigo
     var body: some View {
         VStack {
-            HStack {
-                Text(amigoVM.arrAmigos[index].nombre)
+            HStack{
+                Text(amigoCurrent.nombre)
                     .font(.title)
                     .foregroundColor(.white)
-                Button {
-                    print(amigoVM.arrAmigos[index].favorito.toggle())
-                } label: {
-                    Image(
-                        systemName:
-                            amigoVM.arrAmigos[index].favorito
-                            ? "star.fill" : "star"
-                    )
-                    .foregroundColor(
-                        amigoVM.arrAmigos[index].favorito ? .yellow : .gray)
+                Button{
+                    favorito.toggle()
+                }label:{
+                    Image(systemName: favorito ? "star.fill" : "star")
+                        .foregroundColor(favorito ? .yellow : .gray)
                 }
             }
-            Label(amigoVM.arrAmigos[index].telefono, systemImage: "iphone")
+            Label(amigoCurrent.telefono, systemImage:"iphone")
                 .font(.body)
-            Link(
-                destination: URL(
-                    string: "mailto:\(amigoVM.arrAmigos[index].email)")!,
-                label: {
-                    Image(systemName: "livephoto")
-                        .frame(width: 20, height: 20, alignment: .center)
-                    Text(amigoVM.arrAmigos[index].email)
-                })
+            Link(destination: URL(string: "mailto:" + amigoCurrent.email)!, label: {
+                Image(systemName: "livephoto")
+                    .frame(width: 20, height: 20, alignment: .center)
+                Text(amigoCurrent.email)
+            })
             Divider()
+            HStack {
+                Text("About " + amigoCurrent.nombre)
+                    .font(.headline)
+                Image(systemName: "pencil")
+                    .foregroundColor(.white)
+                    .font(.headline)
+            }
             TextEditor(text: $textoOpinion)
-                .frame(width: 350, height: 300)
-                .overlay(Rectangle().stroke(Color.gray, lineWidth: 2))
-                .onAppear {
-                    textoOpinion = amigoVM.arrAmigos[index].about
-                }
-                .onChange(of: textoOpinion) {
-                    if textoOpinion.count > 150 {
+                .frame(width: 350, height: 200)
+                .overlay(Rectangle().stroke(Color.black, lineWidth: 1))
+                .onChange(of: textoOpinion){
+                    if (textoOpinion.count > 150) {
                         textoOpinion = String(textoOpinion.prefix(150))
                     }
-                    amigoVM.arrAmigos[index].about = textoOpinion
                 }
                 .font(.footnote)
                 .scrollContentBackground(.hidden)
             let characterCount: Int = Int(textoOpinion.count)
-            ProgressView(
-                "Número de caracteres: \(characterCount)/150",
-                value: min(Double(characterCount), 150), total: 150
-            )
-            .progressViewStyle(LinearProgressViewStyle())
-            .accentColor(characterCount >= 100 ? .red : .blue)
-            .frame(width: 300)
+            ProgressView("Número de caracteres: \(characterCount)/150", value: min(Double(characterCount), 150), total: 150)
+                .progressViewStyle(LinearProgressViewStyle())
+                .accentColor(characterCount >= 100 ? .red : .blue)
+                .frame(width: 300)
             Spacer()
-        }.background(Color.green)
-            .onAppear{
-                //Inicializo las variables de estado
-                textoOpinion = amigoCurrent.about
-                favorito = amigo.favorito //He creado la variable de estado favorito
-                amigoIndex = amigoVM.datos.firstIndex(where: {$0.id == amigo.id})!
-            }
-            .onDisappear{
-                //Actualizo la estructura de datos principal para registrar los cambios
-                amigoVM.datos[amigoIndex].about = textoOpinion
-                amigoVM.datos[amigoIndex].favorito = favorito
-            }
+        }.background(Color.brown)
+        .onAppear {
+            textoOpinion = amigoCurrent.about
+            favorito = amigoCurrent.favorito
+            amigoIndex = amigoVM.arrAmigos.firstIndex(where: {$0.id == amigoCurrent.id})!
+        }
+        .onDisappear {
+            amigoVM.arrAmigos[amigoIndex].about = textoOpinion
+            amigoVM.arrAmigos[amigoIndex].favorito = favorito
+        }
     }
-
-}
-
-#Preview {
-    VistaDatos(
-        amigoCurrent: Amigo(
-            nombre: "Mat Fraser", telefono: "3084545452",
-            email: "matfraser@gmailing.com",
-            about: "Mat Fraser is the best athlete of the world",
-            imagenID: "MatFraser",
-            latitud: 36.83041530329687, longitud: -2.4059776820622836,
-            favorito: true)
-    ).environmentObject(AmigoViewModel())
 }

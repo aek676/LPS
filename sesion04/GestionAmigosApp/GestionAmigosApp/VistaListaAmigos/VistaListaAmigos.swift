@@ -41,6 +41,14 @@ struct VistaListaAmigos: View {
     @State var soloFavoritos = false
     @State var query: String = ""
     @State var enEdicion: Bool = false
+    // Variables de estado
+    @State var nombre: String = ""
+    @State var telefono: String = ""
+    @State var email: String = ""
+    @State var imagenID: String = "Person"
+    // Variables para VistaAddAmigos
+    @State var mostrarAddAmigo: Bool = false
+    @State var cancelAddAmigo: Bool = false
 
     var body: some View {
         NavigationView {
@@ -62,13 +70,79 @@ struct VistaListaAmigos: View {
                             destination: VistaDetalle(amigoCurrent: amigo)
                                 .environmentObject(amigoVM)
                         ) {
-                            VistaFila(amigoCurrent: amigo)
+                            HStack {
+                                Image(amigo.imagenID)
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                                    .overlay(
+                                        Circle().stroke(
+                                            Color.white, lineWidth: 2)
+                                    )
+                                    .shadow(color: Color.red, radius: 1)
+                                VStack(alignment: .leading) {
+                                    Text(amigo.nombre)
+                                        .font(.subheadline)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color.green)
+                                    Text(amigo.telefono)
+                                        .font(.caption2)
+                                        .fontWeight(.medium)
+                                }
+                                Spacer()
+                                Image(
+                                    systemName: amigo.favorito
+                                        ? "star.fill" : "star"
+                                )
+                                .foregroundColor(
+                                    amigo.favorito ? .yellow : .gray)
+                            }
                         }
                         .transition(.slide)
                     }.onDelete { indexSet in
                         amigoVM.arrAmigos.remove(atOffsets: indexSet)
+                    }.onMove { indices, newOffset in
+                        amigoVM.arrAmigos.move(
+                            fromOffsets: indices, toOffset: newOffset)
                     }
                 }.navigationTitle("Amigos")
+                    .navigationBarItems(
+                        leading:
+                            Button {
+                                enEdicion.toggle()
+                            } label: {
+                                Text(enEdicion ? "Cancelar" : "Editar")
+                                    .font(.title)
+                                    .foregroundColor(Color.blue)
+                                    .shadow(
+                                        color: Color(
+                                            red: 0.28, green: 0.855, blue: 0.92),
+                                        radius: 9)
+                            },
+                        trailing:
+                            Button {
+                                mostrarAddAmigo.toggle()
+                                nombre = ""
+                                telefono = ""
+                                email = ""
+                                imagenID = "Person"
+                            } label: {
+                                Image(systemName: "plus.circle")
+                                    .font(.title)
+                                    .foregroundColor(Color.red)
+                                    .shadow(color: Color.pink, radius: 9)
+                            }
+                            .sheet(isPresented: $mostrarAddAmigo, onDismiss:{
+                                if !cancelAddAmigo {
+                                    amigoVM.arrAmigos.append(Amigo(nombre: nombre.isEmpty ? "nuevoAmigo" : nombre, telefono: telefono.isEmpty ? "777777777" : telefono, email: email.isEmpty ? "nuevoAmigos@gmailing.com" : email, imagenID: imagenID))
+                                }
+                            }, content: {
+                                VistaAddAmigo(nombre: $nombre, telefono: $telefono, email: $email, imagenID: $imagenID, cancelar: $cancelAddAmigo)
+                            })
+                    ).environment(
+                        \.editMode,
+                        .constant(
+                            enEdicion ? EditMode.active : EditMode.inactive))
             }
 
         }

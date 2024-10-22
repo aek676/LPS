@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct VistaFila: View {
-    @EnvironmentObject private var amigoVM: AmigoViewModel
+    @EnvironmentObject private var modeloDatos: AmigoViewModel
     @State var amigoCurrent: Amigo
-    var index: Int {
-        amigoVM.arrAmigos.firstIndex(where: { $0.id == amigoCurrent.id })!
-    }
+    var index: Int = 0
+   
     var body: some View {
         HStack {
             Image(amigoCurrent.imagenID)
                 .resizable()
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 2))
+                .overlay(
+                    Circle().stroke(
+                        Color.white, lineWidth: 2)
+                )
                 .shadow(color: Color.red, radius: 1)
             VStack(alignment: .leading) {
                 Text(amigoCurrent.nombre)
@@ -32,11 +34,11 @@ struct VistaFila: View {
             }
             Spacer()
             Image(
-                systemName: amigoVM.arrAmigos[index].favorito
+                systemName: amigoCurrent.favorito
                     ? "star.fill" : "star"
             )
             .foregroundColor(
-                amigoVM.arrAmigos[index].favorito ? .yellow : .gray)
+                amigoCurrent.favorito ? .yellow : .gray)
         }
 
     }
@@ -44,6 +46,6 @@ struct VistaFila: View {
 
 #Preview {
     List(AmigoViewModel().arrAmigos) {
-        VistaFila(amigoCurrent: $0).environmentObject(AmigoViewModel())
+        VistaFila(amigoCurrent: $0, index: 1).environmentObject(AmigoViewModel())
     }
 }
