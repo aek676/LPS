@@ -35,16 +35,6 @@
 			path = Extensiones;
 			sourceTree = "<group>";
 		};
-		351813582CC819650040B7BA /* PreviewContent */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PreviewContent;
-			sourceTree = "<group>";
-		};
-		351813592CC8197C0040B7BA /* ViewModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		3518135A2CC819890040B7BA /* Model */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Model;
@@ -53,6 +43,11 @@
 		3518136A2CC819980040B7BA /* GestionMascotas */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GestionMascotas;
+			sourceTree = "<group>";
+		};
+		355F8FD02CCFEA64003E2CEB /* ViewModel */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -85,11 +80,10 @@
 		3518131E2CC8190A0040B7BA = {
 			isa = PBXGroup;
 			children = (
+				355F8FD02CCFEA64003E2CEB /* ViewModel */,
 				351813542CC819330040B7BA /* Extensiones */,
-				351813592CC8197C0040B7BA /* ViewModel */,
 				3518135A2CC819890040B7BA /* Model */,
 				3518136A2CC819980040B7BA /* GestionMascotas */,
-				351813582CC819650040B7BA /* PreviewContent */,
 				351813282CC8190A0040B7BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,10 +115,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				351813542CC819330040B7BA /* Extensiones */,
-				351813582CC819650040B7BA /* PreviewContent */,
-				351813592CC8197C0040B7BA /* ViewModel */,
 				3518135A2CC819890040B7BA /* Model */,
 				3518136A2CC819980040B7BA /* GestionMascotas */,
+				355F8FD02CCFEA64003E2CEB /* ViewModel */,
 			);
 			name = GestionMascotas;
 			packageProductDependencies = (
