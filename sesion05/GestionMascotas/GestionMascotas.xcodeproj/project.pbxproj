@@ -45,6 +45,11 @@
 			path = GestionMascotas;
 			sourceTree = "<group>";
 		};
+		3542DCB62CD1431200A92142 /* ListaPersonasView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ListaPersonasView;
+			sourceTree = "<group>";
+		};
 		355F8FD02CCFEA64003E2CEB /* ViewModel */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ViewModel;
@@ -80,9 +85,10 @@
 		3518131E2CC8190A0040B7BA = {
 			isa = PBXGroup;
 			children = (
-				355F8FD02CCFEA64003E2CEB /* ViewModel */,
-				351813542CC819330040B7BA /* Extensiones */,
 				3518135A2CC819890040B7BA /* Model */,
+				351813542CC819330040B7BA /* Extensiones */,
+				355F8FD02CCFEA64003E2CEB /* ViewModel */,
+				3542DCB62CD1431200A92142 /* ListaPersonasView */,
 				3518136A2CC819980040B7BA /* GestionMascotas */,
 				351813282CC8190A0040B7BA /* Products */,
 			);
@@ -117,6 +123,7 @@
 				351813542CC819330040B7BA /* Extensiones */,
 				3518135A2CC819890040B7BA /* Model */,
 				3518136A2CC819980040B7BA /* GestionMascotas */,
+				3542DCB62CD1431200A92142 /* ListaPersonasView */,
 				355F8FD02CCFEA64003E2CEB /* ViewModel */,
 			);
 			name = GestionMascotas;

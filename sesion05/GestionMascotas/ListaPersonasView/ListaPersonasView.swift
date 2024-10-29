@@ -38,29 +38,8 @@ struct ListaPersonasView: View {
     }
 }
 
-struct HeaderView: View {
-    @EnvironmentObject var vm: ViewModel
-    var persona: PersonaEntity
-    var body: some View {
-        Image(uiImage: UIImage(data: persona.foto!)!)
-        Text("Hello Header")
-    }
-}
 
-struct FilaView: View {
-    @EnvironmentObject var vm: ViewModel
-    var persona: PersonaEntity
-    var body: some View {
-        Text("Hello Section")
-    }
-}
-struct AddPersonaView: View {
-    @EnvironmentObject var vm: ViewModel
-    @Binding var mostrarAddPersona: Bool
-    var body: some View {
-        Text("Hello Add Persona")
-    }
-}
+
 struct ListaPersonasView_Previews: PreviewProvider {
     static var previews: some View {
         ListaPersonasView()

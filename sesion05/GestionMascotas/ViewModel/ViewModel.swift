@@ -8,7 +8,6 @@ class ViewModel: ObservableObject {
     @Published var mascotasArray: [MascotaEntity] = []
     init() {
         cargarDatos()
-        addPersonas()
     }
     func cargarDatos() {
         personasArray.removeAll()
@@ -57,9 +56,5 @@ class ViewModel: ObservableObject {
     func deleteMascota(mascota: MascotaEntity) {
         gestorCoreData.contexto.delete(mascota)
         guardarDatos()
-    }
-    func addPersonas () {
-        addPersona(nombre: "Pepe Pérez", foto: UIImage(systemName: "plus")!)
-        addPersona(nombre: "María de las Angustias", foto: UIImage(systemName: "minus")!)
     }
 }
