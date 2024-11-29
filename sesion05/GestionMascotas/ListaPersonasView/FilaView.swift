@@ -18,9 +18,12 @@ struct FilaView: View {
                     Text("\(mascotas.count) mascotas")
                     ForEach(mascotas) { mascota in
                         HStack {
-                            Text(mascota.raza!)
+                            Image(mascota.raza!)  // Imagen para gatos (nombre del archivo en tus assets)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 25, height: 25)
                             Text(mascota.nombre!)
-                            Text("\(mascota.edad)")
+                            Text("(\(mascota.edad) \(mascota.edad == 1 ? "año" : "años"))")
                             Spacer()
                             Image(systemName: "minus.circle")
                                 .font(.headline)

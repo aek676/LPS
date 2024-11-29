@@ -9,10 +9,16 @@ import SwiftUI
 struct HeaderView: View {
     @EnvironmentObject var vm: ViewModel
     var persona: PersonaEntity
+
+    @State private var isAddMascotaViewPresented = false
+    @State private var nombreMascota: String = ""
+    @State private var edadMascota: Int16 = 0
+    @State private var tipoMascota: String = "Perro"
+
     var body: some View {
         HStack(alignment: .center, spacing: 10) {
             if let fotoData = persona.foto,
-                let uiImage = UIImage(data: fotoData)
+               let uiImage = UIImage(data: fotoData)
             {
                 Image(uiImage: uiImage)
                     .resizable()
@@ -20,14 +26,16 @@ struct HeaderView: View {
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
                     .onTapGesture {
-                        vm.addMascota(persona: persona, nombre: "\(persona.nombre!)\(Int.random(in: 1000...2000))", edad: 3, raza: "gato")
+                        isAddMascotaViewPresented = true // Abre la hoja modal
                     }
-
             } else {
                 Image(systemName: "person.circle")
                     .resizable()
                     .frame(width: 50, height: 50)
                     .foregroundColor(.gray)
+                    .onTapGesture {
+                        isAddMascotaViewPresented = true // Abre la hoja modal si no hay foto
+                    }
             }
 
             Text(persona.nombre ?? "")
@@ -35,7 +43,21 @@ struct HeaderView: View {
                 .foregroundColor(.primary)
 
             Spacer()
-        }.padding()
-
+        }
+        .padding()
+        .sheet(isPresented: $isAddMascotaViewPresented) {
+            AddMascotaView(
+                nombreMascota: $nombreMascota,
+                edadMascota: $edadMascota,
+                tipoMascota: $tipoMascota,
+                isPresented: $isAddMascotaViewPresented
+            )
+            .onDisappear {
+                if !nombreMascota.isEmpty {
+                    // Agregar la mascota si el usuario presionó aceptar
+                    vm.addMascota(persona: persona, nombre: nombreMascota, edad: edadMascota, raza: tipoMascota)
+                }
+            }
+        }
     }
 }
